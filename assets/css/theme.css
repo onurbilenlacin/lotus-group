@@ -22130,10 +22130,6 @@ a.footer-link:hover {
     transform: translateX(-50%) translateY(-50%) rotate(135deg);
 }
 
-.checked-indicator {
-    display: none;
-}
-
 .hr-feature {
     width: 12rem;
     margin: 1.4rem auto;
@@ -22143,6 +22139,24 @@ a.footer-link:hover {
 .feature-item:hover .checked-indicator,
 .feature-item:focus .checked-indicator {
     color: #000;
+}
+
+.checked-indicator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border: 1px solid var(--reign-border-color);
+    height: 2.25rem;
+    width: 2.25rem;
+    border-radius: 50%;
+    background-color: #fff;
+    line-height: 2.25rem;
+    text-align: center;
+    color: #9ba0a7;
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
 }
 
 @media (min-width: 992px) {
@@ -22192,27 +22206,6 @@ a.footer-link:hover {
         right: 2.5rem;
     }
 
-    .checked-indicator {
-        display: block;
-        position: absolute;
-        border: 1px solid var(--reign-border-color);
-        height: 2.25rem;
-        width: 2.25rem;
-        border-radius: 50%;
-        background-color: #fff;
-        line-height: 2.25rem;
-        text-align: center;
-        color: #9ba0a7;
-        -webkit-transition: all 0.2s ease;
-        -o-transition: all 0.2s ease;
-        transition: all 0.2s ease;
-    }
-
-    .checked-indicator-top {
-        -webkit-transform: translate(-97%, -105%);
-        -ms-transform: translate(-97%, -105%);
-        transform: translate(-97%, -105%);
-    }
 
     .checked-indicator-bottom {
         -webkit-transform: translate(-97%, 90%);
