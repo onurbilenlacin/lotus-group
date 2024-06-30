@@ -22477,3 +22477,11 @@ video {
     letter-spacing: 0.02em;
 }
 /*# sourceMappingURL=theme.css.map */
+
+
+.cookie-disclaimer {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+} 

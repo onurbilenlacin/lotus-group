@@ -992,7 +992,11 @@
                             <h5 class="mb-3">
                                 Register Now and Start Gaining Customers
                             </h5>
-                            <form class="text-left" onsubmit="handleSubmit()">
+                            <form
+                                class="text-left"
+                                onsubmit="event.preventDefault(); handleSubmit();"
+                                id="register-form"
+                            >
                                 <div class="form-group mb-3">
                                     <label class="form-label" for="full-name"
                                         >Full Name
@@ -1072,7 +1076,7 @@
                                         type="text"
                                         id="official-name"
                                         name="official-name"
-                                        placeholder="Harmony Welnlness Spa Ltd."
+                                        placeholder="Harmony Wellness Spa Ltd."
                                     />
                                 </div>
                                 <div class="form-group mb-3">
@@ -1099,6 +1103,7 @@
                                         >Address of Business
                                         <span class="text-danger">*</span>
                                     </label>
+
                                     <input
                                         class="fs-0 form-control"
                                         type="text"
@@ -1108,6 +1113,8 @@
                                         id="business-address"
                                         autocomplete="off"
                                     />
+                                    <div id="address-container"></div>
+
                                     <div id="address-title"></div>
                                     <ul id="address-results"></ul>
                                 </div>
@@ -1212,7 +1219,22 @@
                                         required="required"
                                     ></textarea>
                                 </div>
-                                <div class="g-recaptcha"></div>
+                                <div class="">
+                                    <p>
+                                        We use cookies to ensure that we give
+                                        you the best experience on our website.
+                                        By continuing to use this site, you
+                                        accept our use of cookies.
+                                    </p>
+                                    <label>
+                                        <input
+                                            type="checkbox"
+                                            id="cookieConsent"
+                                            name="cookieConsent"
+                                        />
+                                        I accept the use of cookies
+                                    </label>
+                                </div>
                                 <div class="d-grid">
                                     <button
                                         class="btn btn-dark hvr-sweep-top"
